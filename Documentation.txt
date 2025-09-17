@@ -1,0 +1,26 @@
+1. We've created our txt file, app.py and models.py
+
+2. Steps we followed:
+     - pipenv install
+     - pipenv shell
+     - pipenv install flask
+     - pipenv install flask-sqlalchemy
+     - pipenv install flask-migrate
+     - pipenv install sqlalchemy_serializer
+     - pipenv install sqlalchemy
+     - pipenv install flask-restful
+     - pipenv install faker
+
+3. We created a Course, Student Model using sqlalchemy and serializermixin
+
+4. We then put together the realtionship between the courses and students
+
+5. In app.py, we then imported the necessary files such as flask_restful, migrate and our models
+
+6. We setup our flask environment using FLASK_APP and FLASK_RUN_PORT
+
+7. We initiated our first migration through flask db init, flask db migrate, flask db upgrade head
+
+8. We created seed data for our database through faker
+
+
