@@ -49,11 +49,12 @@ class CourseById(Resource):
         db.session.commit()
         response_body= {"message":"Course successfully deleted"}
         return make_response(response_body, 200)
-    def put(self,id):
+    def patch(self,id):
         course=Course.query.get(id)
         data=request.get_json()  
-        for attr in data:
-            setattr(course, attr, data.get(attr))
+        for attr, value in data.items():
+            if value not in [None, ""]: 
+                setattr(course, attr, value)
         db.session.commit()
         response= make_response(course.to_dict(rules=('-students',)), 200)
         return response

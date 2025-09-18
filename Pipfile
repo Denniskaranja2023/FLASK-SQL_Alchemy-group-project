@@ -11,6 +11,7 @@ sqlalchemy-serializer = "*"
 sqlalchemy = "*"
 flask-restful = "*"
 faker = "*"
+flask-cors = "*"
 
 [dev-packages]
 

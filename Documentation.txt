@@ -23,4 +23,3 @@
 
 8. We created seed data for our database through faker
 
-
