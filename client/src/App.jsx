@@ -75,6 +75,7 @@ function App() {
 
   return (
     <div className="courses">
+      <h1 style={{textDecoration:"underline"}}>Available Courses:</h1>
       {courses.map(course => (
         <div key={course.id} className="course-card">
           <h2>{course.name}</h2>
